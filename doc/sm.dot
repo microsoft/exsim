@@ -1,0 +1,197 @@
+digraph { "control_of_frame_pointer" [
+    fontsize = 12,
+    label = "control_of_frame_pointer"
+]
+"control_of_function_pointer" [
+    fontsize = 12,
+    label = "control_of_function_pointer"
+]
+"evading_nx" [
+    fontsize = 12,
+    label = "evading_nx"
+]
+"flaw_triggered" [
+    fontsize = 12,
+    label = "flaw_triggered"
+]
+"control_of_arbitrary_memory" [
+    fontsize = 12,
+    label = "control_of_arbitrary_memory"
+]
+"env_prep_incomplete" [
+    fontsize = 12,
+    label = "env_prep_incomplete"
+]
+"control_of_heap_object" [
+    fontsize = 12,
+    label = "control_of_heap_object"
+]
+"control_of_return_address" [
+    fontsize = 12,
+    label = "control_of_return_address"
+]
+"control_of_code_exec" [
+    fontsize = 12,
+    label = "control_of_code_exec"
+]
+"control_of_stack_memory" [
+    fontsize = 12,
+    label = "control_of_stack_memory"
+]
+"control_of_seh_record" [
+    fontsize = 12,
+    label = "control_of_seh_record"
+]
+"control_of_instruction_pointer" [
+    fontsize = 12,
+    label = "control_of_instruction_pointer"
+]
+"control_of_heap_structure" [
+    fontsize = 12,
+    label = "control_of_heap_structure"
+]
+"target_defined" [
+    fontsize = 12,
+    label = "target_defined"
+]
+"env_prep_complete" [
+    fontsize = 12,
+    label = "env_prep_complete"
+]
+"control_of_heap_memory" [
+    fontsize = 12,
+    label = "control_of_heap_memory"
+]
+"control_of_frame_pointer" -> "control_of_return_address" [
+    label = "function_exit"
+    fontsize = 12
+]
+"control_of_function_pointer" -> "control_of_instruction_pointer" [
+    label = "call_through_function_pointer"
+    fontsize = 12
+]
+"evading_nx" -> "control_of_instruction_pointer" [
+    label = "disable_dep_for_process"
+    fontsize = 12
+]
+"evading_nx" -> "control_of_instruction_pointer" [
+    label = "evade_nx_return_oriented"
+    fontsize = 12
+]
+"evading_nx" -> "control_of_instruction_pointer" [
+    label = "evade_nx_alloc_copy"
+    fontsize = 12
+]
+"evading_nx" -> "control_of_instruction_pointer" [
+    label = "evade_nx_crtheap"
+    fontsize = 12
+]
+"flaw_triggered" -> "control_of_heap_memory" [
+    label = "heap_buffer_overrun"
+    fontsize = 12
+]
+"flaw_triggered" -> "control_of_arbitrary_memory" [
+    label = "kernel_read_nullpage"
+    fontsize = 12
+]
+"flaw_triggered" -> "control_of_arbitrary_memory" [
+    label = "write_anywhere"
+    fontsize = 12
+]
+"flaw_triggered" -> "control_of_stack_memory" [
+    label = "stack_buffer_overrun"
+    fontsize = 12
+]
+"control_of_arbitrary_memory" -> "control_of_heap_memory" [
+    label = "heap_buffer_overrun"
+    fontsize = 12
+]
+"control_of_arbitrary_memory" -> "control_of_stack_memory" [
+    label = "stack_buffer_overrun"
+    fontsize = 12
+]
+"control_of_arbitrary_memory" -> "control_of_function_pointer" [
+    label = "overwrite_any_function_pointer"
+    fontsize = 12
+]
+"env_prep_incomplete" -> "env_prep_incomplete" [
+    label = "spray_code"
+    fontsize = 12
+]
+"env_prep_incomplete" -> "env_prep_incomplete" [
+    label = "spray_data"
+    fontsize = 12
+]
+"env_prep_incomplete" -> "env_prep_complete" [
+    label = "finish_env_prep"
+    fontsize = 12
+]
+"env_prep_incomplete" -> "env_prep_incomplete" [
+    label = "load_dotnet_control"
+    fontsize = 12
+]
+"control_of_return_address" -> "control_of_instruction_pointer" [
+    label = "function_exit"
+    fontsize = 12
+]
+"control_of_heap_object" -> "control_of_instruction_pointer" [
+    label = "call_through_function_pointer"
+    fontsize = 12
+]
+"control_of_stack_memory" -> "control_of_frame_pointer" [
+    label = "overwrite_frame_pointer"
+    fontsize = 12
+]
+"control_of_stack_memory" -> "control_of_seh_record" [
+    label = "overwrite_seh_record"
+    fontsize = 12
+]
+"control_of_stack_memory" -> "control_of_return_address" [
+    label = "overwrite_return_address"
+    fontsize = 12
+]
+"control_of_stack_memory" -> "control_of_return_address" [
+    label = "partial_overwrite_return_address"
+    fontsize = 12
+]
+"control_of_seh_record" -> "control_of_instruction_pointer" [
+    label = "trigger_exception"
+    fontsize = 12
+]
+"control_of_instruction_pointer" -> "evading_nx" [
+    label = "evade_nx"
+    fontsize = 12
+]
+"control_of_instruction_pointer" -> "control_of_code_exec" [
+    label = "transfer_to_code_address"
+    fontsize = 12
+]
+"control_of_instruction_pointer" -> "control_of_code_exec" [
+    label = "transfer_to_data_address"
+    fontsize = 12
+]
+"control_of_heap_structure" -> "control_of_instruction_pointer" [
+    label = "call_commit_routine"
+    fontsize = 12
+]
+"target_defined" -> "env_prep_incomplete" [
+    label = "start_env_prep"
+    fontsize = 12
+]
+"env_prep_complete" -> "flaw_triggered" [
+    label = "trigger_flaw"
+    fontsize = 12
+]
+"control_of_heap_memory" -> "control_of_heap_object" [
+    label = "overwrite_in_use_heap_object"
+    fontsize = 12
+]
+"control_of_heap_memory" -> "control_of_arbitrary_memory" [
+    label = "coalesce_free_chunk"
+    fontsize = 12
+]
+"control_of_heap_memory" -> "control_of_heap_structure" [
+    label = "overwrite_heap_structure"
+    fontsize = 12
+]
+} 
