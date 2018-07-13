@@ -87,8 +87,6 @@ base_app_64 =
     :windows_kernel_64bit
   ]
 
-#base_flaw = [ Flaw::AbsoluteControlTransferViaNullDereference.new ]
-#base_flaw = Target.flaw_core_profiles.keys
 base_flaw = 
   [
     Flaw::AbsoluteControlTransfer.new,
@@ -152,7 +150,6 @@ p = TargetPermutator.new
 p.debug = true
 p.modes = [ :attack_favor, :normal ]
 p.track_equivalent_only = true
-#p.track_impossible = false #true
 p.track_impossible = true
 p.output_directory = "scenarios"
 p.permutate_scenarios(*scenarios)
