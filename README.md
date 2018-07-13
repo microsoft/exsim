@@ -109,7 +109,7 @@ To evaluate the exploitability of a vulnerability, the simulator for this state 
 
 The simulator then executes the state machine until a desired end state is reached (such as control of code execution) or a fixed point is reached (e.g. no further states to explore). The simulator explores all possible paths from the initial state to the terminal state. Each path represents a possible strategy for exploiting the provided initial state.
 
-A graph representation of the state machine as implemented can be seen [here](https://github.com/Microsoft/exsim/doc/sm.png).
+A graph representation of the state machine as implemented can be seen [here](https://github.com/Microsoft/exsim/blob/master/doc/sm.png).
 
 ## Implementation
 
