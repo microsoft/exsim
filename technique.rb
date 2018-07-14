@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
 module ExSim
 
 # compute desirability lattice by simulation and ordering based on average exploitability involving 

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<features>
+  <feature name="Vector" guid="ee99f69e-53e9-4bcc-891d-f40a810da08c" keyword="vector" symbol="vector">
+    <feature name="File" guid="11093086-0138-4729-8ffc-02c06d0f837a" keyword="file" symbol="file">
+      <feature name="Binary" guid="af62f47d-e8be-4c5c-9168-526892eb060e" keyword="binary" symbol="binary">
+        <feature name="OLE stream" guid="6e6cc8cb-5c0c-46a3-b92d-d56d0c879a60" keyword="ole" symbol="ole" />
+        <feature name="Font" guid="18ECAF6F-04B6-4DFC-A538-312FE3B5ABE0" keyword="font" symbol="font" />
+      </feature>
+      <feature name="Text" guid="194ab461-e349-485b-abb1-023b9aa904f6" keyword="text" symbol="text">
+        <feature name="XML" guid="d20c62b2-5fa1-4008-9c72-9a0a894b5ebf" keyword="xml" symbol="xml" />
+      </feature>
+    </feature>
+    <feature name="Scripting Engine" guid="cbab32a4-e702-46e5-bead-4579fb694a61" keyword="scripting" symbol="scripting_engine" />
+    <feature name="Network" guid="e4ffdf07-3915-4016-af8b-70d03228d03e" keyword="network" symbol="network">
+      <feature name="SMB" guid="FDC22C27-6F95-4E8D-983F-D51E333A6F64" keyword="smb" symbol="smb"/>
+      <feature name="RPC" guid="4400F095-3D40-468F-AB4D-20876B1F8BFC" keyword="rpc" symbol="rpc"/>
+    </feature>
+    <feature name="Browser" guid="C2A78ADB-DE8C-4FA5-AF6E-E80CD2AD1FD6" keyword="browser" symbol="browser" />
+    <feature name="LPC" guid="4883c719-7bf9-4d5f-91ef-c881bdd54c8c" keyword="lpc" symbol="lpc" />
+    <feature name="HyperV" guid="2ABC2C53-5823-4A2E-9D5D-A9724BD835F5" keyword="hyperv" symbol="hyperv">
+      <feature name="VMBUS" guid="3D75FDF3-0911-41F8-8EE5-7B6ABC46AD03" keyword="vmbus" symbol="vmbus"/>
+      <feature name="VSP" guid="15D3E4F3-4441-4F9F-845D-883161ED8D07" keyword="vsp" symbol="vsp"/>
+      <feature name="Hypercall" guid="09413A63-66A6-4364-BE7B-91F802641A5C" keyword="hypercall" symbol="hypercall"/>
+    </feature>
+    <feature name="Kernel API" guid="3adc81d1-0c1a-41bf-aa53-6bd57998f8cc" keyword="kernel_api" symbol="kernel_api">
+      <feature name="IOCTL" guid="D8A7A85F-8887-47C8-82C1-8823A7DF187D" keyword="ioctl" symbol="ioctl" />
+      <feature name="NTOS" guid="BC1262DC-2684-405F-8203-1083CEA2B0AB" keyword="ntos" symbol="ntos" />
+      <feature name="Win32K" guid="f0ababfe-39d4-477d-adeb-96e8c85bfcb3" keyword="win32k" symbol="win32k" />
+    </feature>
+  </feature>
+  <feature name="Exposure" guid="20073f27-2e53-4faf-b3f0-2fe229a10492" keyword="exposure" symbol="exposure">
+    <feature name="Locality" guid="38aeb705-7a26-4f62-ad9c-343d4652f2a0" keyword="locality" symbol="locality">
+      <feature name="Local" guid="00d95147-f716-4d27-b1c5-54932ab88b8c" keyword="local" symbol="local" />
+      <feature name="Remote" guid="9589be6e-be4f-4ffa-8121-dd4b86c06f4c" keyword="remote" symbol="remote" />
+    </feature>
+    <property name="Access required" guid="6d398fe6-1f3b-4dde-872c-5d383cab75ba" keyword="access_required" symbol="access_required">
+      <feature name="Anonymous" guid="5e514ffd-277f-4613-ab97-74bda1264393" keyword="anonymous" symbol="anonymous" />
+      <feature name="Authenticated" guid="b1d37f4e-bf2d-48b7-bae9-ef4eb6587fba" keyword="authenticated" symbol="authenticated" />
+      <feature name="Authorized" guid="4598eb51-55ae-44e6-8d51-ed62c6744db8" keyword="authorized" symbol="authorized" />
+    </property>
+    <property name="Execution domain" guid="3088fd52-9028-41fc-ac0f-621eefa3bfcf" keyword="execution_domain" symbol="execution_domain">
+      <feature name="User mode" guid="680389e4-e1a2-4449-8fcf-db9718113589" keyword="user" symbol="user" />
+      <feature name="Kernel mode" guid="cacc0b6a-bc3a-4d91-8ba9-0004a83a9d7c" keyword="kernel" symbol="kernel" />
+      <feature name="Hypervisor" guid="D1AF186C-E3F2-42F4-89C9-D3A82AC14161" keyword="hypervisor" symbol="hypervisor" />
+    </property>
+    <property name="User interaction" guid="D2412346-BF77-4C4A-BA54-73BC7C1B3F21" keyword="execution_domain" symbol="user_interaction">
+      <feature name="Required" guid="56F986E2-1B56-4E73-93A6-1B21FF77CC98" keyword="required" symbol="required" />
+      <feature name="Not required" guid="44CF32F7-256D-40BF-BD0D-64ADC22940FF" keyword="not_required" symbol="not_required" />
+    </property>
+    <property name="Default" guid="0BDE5A22-5997-4C11-8512-D0DABF20E871" keyword="default" symbol="default">
+      <feature name="Enabled" guid="076D4B47-D648-4F6A-9B75-766432DE3291" keyword="enabled" symbol="enabled" />
+      <feature name="Disabled" guid="41BC0C40-021A-4449-B621-309E57CC0E85" keyword="disabled" symbol="disabled" />
+    </property>
+    <feature name="In box component" guid="50c52f9c-67d9-45f9-9cd9-218ed79a76de" keyword="inbox" symbol="inbox" />
+  </feature>
+</features>

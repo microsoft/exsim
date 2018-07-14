@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Hardware>
+
+  <HasProperty>ArchitectureFamily</HasProperty>
+  <HasProperty>AddressBits</HasProperty>
+  <HasProperty>NXSupported</HasProperty>
+  <HasProperty>NXPolicy</HasProperty>
+  <HasProperty>SMEPSupported</HasProperty>
+  <HasProperty>SMEPPolicy</HasProperty>
+  
+  <Hardware symbol="x86" name="32-bit x86" guid="{4864CD21-B875-4CB2-AE9E-0C5F98E55764}">
+
+    <AddressBits>32</AddressBits>
+    <ArchitectureFamily>I386</ArchitectureFamily>
+
+    <Hardware symbol="x86_no_pae" name="32-bit x86 (no PAE)" guid="{1CD43E72-0F3F-44C6-B636-3CEE3915D196}">
+      
+      <NXPolicy>NotSupported</NXPolicy>
+      <SMEPPolicy>NotSupported</SMEPPolicy>
+
+    </Hardware>
+
+    <Hardware symbol="x86_pae" name="32-bit x86 (PAE)" guid="{17937793-6E36-432C-826F-386C50FDE91D}">
+
+      <NXPolicy>On</NXPolicy>
+      <SMEPPolicy>NotSupported</SMEPPolicy>
+      
+    </Hardware>
+
+    <Hardware symbol="x86_ivybridge" name="32-bit x86 (Ivybridge)" guid="{2CC33B94-BC92-4FD6-B39F-A88A4A7F3438}">
+
+      <NXPolicy>On</NXPolicy>
+      <SMEPPolicy>On</SMEPPolicy>
+
+    </Hardware>
+
+  </Hardware>
+
+  <Hardware symbol="x64" name="64-bit x64" guid="{E5723AC9-6635-46D8-A56C-2B29BC3781DA}">
+    
+    <AddressBits>64</AddressBits>
+    <ArchitectureFamily>AMD64</ArchitectureFamily>
+
+    <NXPolicy>On</NXPolicy>
+    <SMEPPolicy>NotSupported</SMEPPolicy>
+
+    <Hardware symbol="x64_ivybridge" name="64-bit x64 (Ivybridge)" guid="{FFA526E1-ECF1-4283-955B-332FC849EF6B}">
+
+      <SMEPPolicy>On</SMEPPolicy>
+
+    </Hardware>
+    
+  </Hardware>
+
+  <Hardware symbol="arm" name="ARM" guid="{6CCEA799-C807-4453-9055-E256FCD8635A}">
+
+    <AddressBits>32</AddressBits>
+    <ArchitectureFamily>ARM</ArchitectureFamily>
+
+    <NXPolicy>On</NXPolicy>
+    <SMEPPolicy>NotSupported</SMEPPolicy>
+
+    <Hardware symbol="arm_pxn" name="ARM (PXN support)" guid="{3F78DD3C-4F85-46CF-9F55-A593FE1C34F0}">
+      <SMEPPolicy>On</SMEPPolicy>
+    </Hardware>
+    
+  </Hardware>
+  
+</Hardware>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Violations>
+
+  <Violation name="Memory Access" symbol="memory_access" guid="{F7FF8DD3-738E-4749-A2D4-062DFFFC8141}">
+
+    <HasProperty>Method</HasProperty>
+    <HasProperty>Direction</HasProperty>
+    <HasProperty>BaseRegion</HasProperty>
+    <HasProperty>InitialDisplacement</HasProperty>
+
+    <HasProperty>Locality</HasProperty>
+    <HasProperty>AccessRequirement</HasProperty>
+    <HasProperty>ExecutionDomain</HasProperty>
+    <HasProperty>FaultTolerance</HasProperty>
+    <HasProperty>Repeatable</HasProperty>
+
+    <HasProperty>FunctionStackProtectionEnabled</HasProperty>
+    <HasProperty>FunctionStackProtectionVersion</HasProperty>
+    <HasProperty>FunctionStackProtectionEntropyBits</HasProperty>
+
+    <Violation name="Execute" symbol="execute" alias="x" guid="{9FAAA3F4-C197-40C4-BEC8-FE97A5F08915}">
+
+      <HasProperty>ControlTransferMethod</HasProperty>
+
+      <Method>Execute</Method>
+
+      <Violation name="Code Execution" symbol="code_execution" alias="ce" guid="{F77D4785-6818-4223-8BF9-FD84D8F664BA}">
+        
+        <LeadsToViolation target="ce-cc" name="Execute Controlled Code" symbol="execute_controlled_code"/>
+
+        <Violation name="Content Controlled" symbol="content_controlled" alias="ce-cc" guid="{7EF50ECC-A4D1-403A-9F51-E9D3B5BA0B83}">
+          
+          <Description>Attacker can control the instructions of the machine code that is being executed.</Description>
+          <Example>
+            <![CDATA[
+        
+              funcptr_t p = &unsafe_buffer;
+            
+              make_rwx(p);
+            
+              p();
+                   
+            ]]>
+          </Example>
+          
+        </Violation>
+        
+      </Violation>
+
+    </Violation>
+
+    <Violation name="Write" symbol="write" alias="w" guid="{22F29CDA-571E-454A-AFB3-E1697FBB28E6}">
+      
+      <LeadsToFlaw>any</LeadsToFlaw>
+      
+      <HasProperty>Direction</HasProperty>
+      <HasProperty>Displacement</HasProperty>
+
+      <Method>Write</Method>
+      
+    </Violation>
+
+    <Violation name="Read" symbol="read" alias="r" guid="{BC1DB206-D726-44C7-9031-15E6E2A20F61}">
+
+      <HasProperty>Direction</HasProperty>
+      <HasProperty>Displacement</HasProperty>
+
+      <Method>Read</Method>
+
+    </Violation>
+
+  </Violation>
+    
+</Violations>

@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Applications>
+
+  <HasProperty>AddressBits</HasProperty>
+  <HasProperty>KernelApplication</HasProperty>
+  
+  <Application symbol="windows" name="Windows Application" type="MSModel.Application+Windows" guid="{8E847175-50A1-4C09-ACC1-64F51AD2EB99}">
+
+    <HasProperty>UserSEHOPPolicy</HasProperty>
+
+    <KernelApplication>false</KernelApplication>
+
+    <Application symbol="kernel" name="Kernel Application" type="MSModel.Application+Windows+Kernel" guid="{3EE10F18-2210-439E-9375-A6DA582DA073}">
+
+      <KernelApplication>true</KernelApplication>
+      
+    </Application>
+
+    <Application symbol="inbox" name="Inbox Application"  type="MSModel.Application+Windows+Inbox" guid="{428AB300-F28E-4CD1-BB3F-7F8567AAAEBF}">
+
+      <Application symbol="32bit" type="MSModel.Application+Windows+Inbox" guid="{1B120493-DC4F-4866-8D08-1610D88E42F4}">
+        <AddressBits>32</AddressBits>
+      </Application>
+
+      <Application symbol="64bit" type="MSModel.Application+Windows+Inbox" guid="{1B120493-DC4F-4866-8D08-1610D88E42F4}">
+        <AddressBits>64</AddressBits>
+      </Application>
+      
+    </Application>
+
+    <Application symbol="svchost" name="Service Host Application"  type="MSModel.Application+Windows+Svchost" guid="{1A78FFB0-6BBF-457B-BBE8-CD3EDAC2DAB0}">
+
+      <Application symbol="32bit" type="MSModel.Application+Windows+Svchost" guid="{45A2046F-3A4B-46E1-ACA0-82B7A0C8DAA3}">
+        <AddressBits>32</AddressBits>
+      </Application>
+
+      <Application symbol="64bit" type="MSModel.Application+Windows+Svchost" guid="{EE93CFFD-B889-4932-8C36-699E606A937A}">
+        <AddressBits>64</AddressBits>
+      </Application>
+
+    </Application>
+
+    <Application symbol="appx" name="AppX Application"  type="MSModel.Application+Windows+AppX" guid="{15E08698-D2E4-4359-BA8E-EB2B8C779289}">
+
+      <Application symbol="32bit" type="MSModel.Application+Windows+AppX" guid="{3BA20475-A060-4C68-B9CB-EB05C569E66C}">
+        <AddressBits>32</AddressBits>
+      </Application>
+
+      <Application symbol="64bit" type="MSModel.Application+Windows+AppX" guid="{79B0EA81-F638-4F2F-9E3C-00EAD7695E75}">
+        <AddressBits>64</AddressBits>
+      </Application>
+
+    </Application>
+
+    <Application symbol="ie" name="Internet Explorer" type="MSModel.Application+Windows+IE" guid="{21770151-6D1F-4704-83D6-23F1A1EA4ABE}">
+
+      <Application symbol="ie6" name="Internet Explorer 6.0" type="MSModel.Application+Windows+IE+IE6" guid="{10A0F309-4046-41CF-B186-42EE6BEECA42}">
+
+        <Application symbol="32bit" type="MSModel.Application+Windows+IE+IE6" guid="{A33BF2DA-53D4-435E-AC86-7704D6FC6C2E}">
+          <AddressBits>32</AddressBits>
+        </Application>
+
+        <Application symbol="64bit" type="MSModel.Application+Windows+IE+IE6" guid="{EF839E38-AEBF-432E-8E5E-C6AE37704BEC}">
+          <AddressBits>64</AddressBits>
+        </Application>
+        
+      </Application>
+
+      <Application symbol="ie7" name="Internet Explorer 7.0" type="MSModel.Application+Windows+IE+IE7" guid="{430BCB2E-29A9-4DA2-BDC1-B863BD6A185D}">
+
+        <Application symbol="32bit" type="MSModel.Application+Windows+IE+IE7" guid="{52978CBC-88E5-45E6-AD4A-55E9A1936B97}">
+          <AddressBits>32</AddressBits>
+        </Application>
+
+        <Application symbol="64bit" type="MSModel.Application+Windows+IE+IE7" guid="{E45D70D6-A713-40F9-9868-186F80AAF015}">
+          <AddressBits>64</AddressBits>
+        </Application>
+
+      </Application>
+
+      <Application symbol="ie8" name="Internet Explorer 8.0" type="MSModel.Application+Windows+IE+IE8" guid="{7336B311-C1AA-434A-B71C-73B1A6CFD673}">
+
+        <Application symbol="32bit" type="MSModel.Application+Windows+IE+IE8" guid="{19B57E5F-6BD9-40EF-948D-F3A1FFA092AC}">
+          <AddressBits>32</AddressBits>
+        </Application>
+
+        <Application symbol="64bit" type="MSModel.Application+Windows+IE+IE8" guid="{E5E2752C-0F14-4186-8F8A-657D97AA8994}">
+          <AddressBits>64</AddressBits>
+        </Application>
+
+      </Application>
+
+      <Application symbol="ie9" name="Internet Explorer 9.0" type="MSModel.Application+Windows+IE+IE9" guid="{FFF2D6A9-BEFD-43D2-8B47-8A5FF48FF2BB}">
+
+        <Application symbol="32bit" type="MSModel.Application+Windows+IE+IE9" guid="{7CA2C7BD-FAB1-4844-8305-0AAA2F5A555A}">
+          <AddressBits>32</AddressBits>
+        </Application>
+
+        <Application symbol="64bit" type="MSModel.Application+Windows+IE+IE9" guid="{98107EF0-1E0F-472F-925E-258FDAED0037}">
+          <AddressBits>64</AddressBits>
+        </Application>
+
+      </Application>
+
+      <Application symbol="ie10" name="Internet Explorer 10.0" type="MSModel.Application+Windows+IE+IE10" guid="{6F4382DF-CB2D-4DBB-B486-37AD0AEE98BF}">
+
+        <Application symbol="modern" name="Internet Explorer 10.0 (modern)" type="MSModel.Application+Windows+IE+IE10+Modern" guid="{770E7A64-A1D3-4D35-87BA-C7777ADDF53B}">
+
+          <Application symbol="32bit" type="MSModel.Application+Windows+IE+IE10+Modern" guid="{DAD6F54C-A51D-457C-BDB9-CBD712DA79E5}">
+            <AddressBits>32</AddressBits>
+          </Application>
+
+          <Application symbol="64bit" type="MSModel.Application+Windows+IE+IE10+Modern" guid="{445CD93A-AAE0-4E7F-8262-03AC9E417777}">
+            <AddressBits>64</AddressBits>
+          </Application>
+          
+        </Application>
+
+        <Application symbol="32bit" type="MSModel.Application+Windows+IE+IE10" guid="{5A01955A-7715-4126-9E29-8799FB0089AB}">
+          <AddressBits>32</AddressBits>
+        </Application>
+
+        <Application symbol="64bit" type="MSModel.Application+Windows+IE+IE10" guid="{1E2C6374-0369-4D3F-B77B-CA298F7D744D}">
+          <AddressBits>64</AddressBits>
+        </Application>
+
+      </Application>
+
+    </Application>
+
+
+    <Application symbol="office" name="Office" type="MSModel.Application+Windows+Office" guid="{80B05859-7FA8-475A-9857-6546AFABB937}">
+
+      <Application symbol="office2003" name="Office 2003" type="MSModel.Application+Windows+Office+Office2003" guid="{E3DA8108-2380-4A76-BD4F-994520850E47}">
+
+        <AddressBits>32</AddressBits>
+        
+      </Application>
+
+      <Application symbol="office2007" name="Office 2007" type="MSModel.Application+Windows+Office+Office2007" guid="{B602D3F1-F9BE-4235-B5AD-E60C7FD4AB60}">
+
+        <AddressBits>32</AddressBits>
+
+      </Application>
+
+      <Application symbol="office2010" name="Office 2010" type="MSModel.Application+Windows+Office+Office2010" guid="{710CE6CE-18D4-4E69-902D-0C55DAA7F754}">
+
+        <Application symbol="32bit" type="MSModel.Application+Windows+Office+Office2010" guid="{C279B45C-5CD8-4FA6-911C-BD715FA1DC0F}">
+          <AddressBits>32</AddressBits>
+        </Application>
+
+        <Application symbol="64bit" type="MSModel.Application+Windows+Office+Office2010" guid="{C1BF3787-82E7-4675-B399-B83F5A748A79}">
+          <AddressBits>64</AddressBits>
+        </Application>
+
+      </Application>
+
+      <Application symbol="office15" name="Office 15.0" type="MSModel.Application+Windows+Office+Office15" guid="{E9AC34FD-5341-4EB6-AD44-1CB64D02FA40}">
+
+        <Application symbol="32bit" type="MSModel.Application+Windows+Office+Office15" guid="{D11F7898-57E0-4DB5-BEB6-343C3648C9E1}">
+          <AddressBits>32</AddressBits>
+        </Application>
+
+        <Application symbol="64bit" type="MSModel.Application+Windows+Office+Office15" guid="{2129C157-DE15-428F-954E-4561E041CAC8}">
+          <AddressBits>64</AddressBits>
+        </Application>
+
+      </Application>
+
+    </Application>
+    
+  </Application>
+</Applications>

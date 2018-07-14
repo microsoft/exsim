@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OperatingSystems>
+
+  <HasProperty>AddressBits</HasProperty>
+
+  <HasProperty>DefaultStackProtectionEnabled</HasProperty>
+  <HasProperty>DefaultStackProtectionVersion</HasProperty>
+  <HasProperty>DefaultStackProtectionEntropyBits</HasProperty>
+
+  <HasProperty>KernelSMEPPolicy</HasProperty>
+  <HasProperty>KernelNullDereferencePreventionPolicy</HasProperty>
+  
+  <OperatingSystem symbol="windows" type="MSModel.OperatingSystem+Windows" guid="{5114C473-67FE-4E68-8CCE-7BDAC7F833F6}">
+
+    <OperatingSystem symbol="2000" type="MSModel.OperatingSystem+Windows+NT2000" guid="{5F23BAC8-D151-4559-B02C-FB160FC478A6}">
+
+      <AddressBits>32</AddressBits>
+
+      <OperatingSystem symbol="sp4" type="MSModel.OperatingSystem+Windows+NT2000+SP4" guid="{57BC472C-8524-4E40-AFEF-98907DCD0659}">
+        
+      </OperatingSystem>
+      
+    </OperatingSystem>
+    
+    <OperatingSystem symbol="xp" type="MSModel.OperatingSystem+Windows+XP" guid="{9F8AA642-7B56-4B2A-8986-8959D80C9828}">
+      
+      <OperatingSystem symbol="rtm" type="MSModel.OperatingSystem+Windows+XP+RTM" guid="{961D229E-170D-4EFB-ADE5-B0C67F9FA32B}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+XP+RTM" guid="{7DA32FF3-AD33-4128-9EA1-E4F9981BA9B1}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+XP+RTM" guid="{3C447495-194E-4EA5-849F-D856513C4693}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+        
+      </OperatingSystem>
+      
+      <OperatingSystem symbol="sp1" type="MSModel.OperatingSystem+Windows+XP+SP1" guid="{8B86489F-4029-4C76-9181-7BC7669D24A7}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+XP+SP1" guid="{909A9537-8FD1-4A0A-9EFC-7C07CAD28003}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+XP+SP1" guid="{D63C50AB-C7D8-497F-83A0-039D3FDE1741}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+      
+      <OperatingSystem symbol="sp2" type="MSModel.OperatingSystem+Windows+XP+SP2" guid="{6567C100-A447-4090-85E7-6F04DFC83F16}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+XP+SP2" guid="{DC395D1D-CC92-4423-94C5-EEFD3E1524E5}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+XP+SP2" guid="{B8ADD0E1-1B55-465A-837C-8B1530D24422}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+        
+      </OperatingSystem>
+
+      <OperatingSystem symbol="sp3" type="MSModel.OperatingSystem+Windows+XP+SP3" guid="{29103756-1D11-4590-A1F0-07C6E2901236}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+XP+SP3" guid="{D97C5AF3-72DD-44ED-9628-533A26A3325E}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+XP+SP3" guid="{91788827-EB7A-4B21-8D96-9A65D808F989}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+      
+    </OperatingSystem>
+
+    <OperatingSystem symbol="vista" type="MSModel.OperatingSystem+Windows+Vista" guid="{186B2EAC-85A2-4D03-951D-5516ADC16FA7}">
+
+      <OperatingSystem symbol="rtm" type="MSModel.OperatingSystem+Windows+Vista+RTM" guid="{792E9F2D-1467-41BB-89BC-50880973AFC7}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Vista+RTM" guid="{0A90D586-5317-4C4E-B1CC-8D03A705CABF}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Vista+RTM" guid="{05FA6BA5-A654-44F8-AC37-9C67364E5F9D}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+        
+      </OperatingSystem>
+
+      <OperatingSystem symbol="sp1" type="MSModel.OperatingSystem+Windows+Vista+SP1" guid="{5E0EE235-D71E-462E-B2CF-BDD4DA86CB00}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Vista+SP1" guid="{0081D840-49D7-40B1-A5C3-21DC5688C31B}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Vista+SP1" guid="{2E9FE214-0916-4E79-80C8-F9EF45C2EFAE}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+        
+      </OperatingSystem>
+
+      <OperatingSystem symbol="sp2" type="MSModel.OperatingSystem+Windows+Vista+SP2" guid="{82848EA3-6C82-4CDC-97F7-57D9AF64C866}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Vista+SP2" guid="{3CD11A96-4D30-47DA-8A8D-AA9E806B5C73}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Vista+SP2" guid="{CA72A11B-C775-4F80-B04A-48B3A4C75E48}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+      
+    </OperatingSystem>
+
+    <OperatingSystem symbol="seven" type="MSModel.OperatingSystem+Windows+Seven" guid="{AFED8175-7072-44E6-BED4-062403FF6212}">
+
+      <OperatingSystem symbol="rtm" type="MSModel.OperatingSystem+Windows+Seven+RTM" guid="{9D34FAF5-8D48-49B3-81F8-55A15F2C2864}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Seven+RTM" guid="{654AA588-4A98-4E30-9497-6DAECD1392CF}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Seven+RTM" guid="{41178D4B-E271-461C-AF6E-7376F50C2F89}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+      <OperatingSystem symbol="sp1" type="MSModel.OperatingSystem+Windows+Seven+SP1" guid="{F5269761-6595-444F-BD52-66ABB9756CF8}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Seven+SP1" guid="{AC7E4B8A-0FDE-46BA-B54A-DD7B76969D05}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Seven+SP1" guid="{C212A17B-0CC6-45E0-8322-2705302FD090}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+    </OperatingSystem>
+
+    <OperatingSystem symbol="eight" type="MSModel.OperatingSystem+Windows+Eight" guid="{F792687D-CBE9-4606-B642-2079E6517543}">
+
+      <OperatingSystem symbol="rtm" type="MSModel.OperatingSystem+Windows+Eight+RTM" guid="{A4872987-3633-403B-B015-17BA4E472746}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Eight+RTM" guid="{274AEC27-95AB-4B1D-977A-1B4B22FFB568}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Eight+RTM" guid="{7A1D2C5A-2DC5-41F0-BCC6-7CCE02DC7A01}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+    </OperatingSystem>
+
+    <OperatingSystem symbol="server2003" type="MSModel.OperatingSystem+Windows+Server2003" guid="{0FE9FFDA-14B0-4E6D-BEA0-05AEF42160A1}">
+
+      <OperatingSystem symbol="rtm" type="MSModel.OperatingSystem+Windows+Server2003+RTM" guid="{DAD38853-E92F-488B-8FAE-F6AB913B824A}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Server2003+RTM" guid="{2103AE9B-AEDD-42D5-A45B-A272EF1DB7B9}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Server2003+RTM" guid="{D5C817DD-F368-4AC5-B2C4-7ECD0EDE6484}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+      <OperatingSystem symbol="sp1" type="MSModel.OperatingSystem+Windows+Server2003+SP1" guid="{8AC39915-6343-405C-B9A8-7F3D36C18ACD}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Server2003+SP1" guid="{DB5307E4-6930-4668-AA9F-B6D401150584}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Server2003+SP1" guid="{E70BEFB7-75CA-46C1-A44C-3FDD8424A095}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+      <OperatingSystem symbol="sp2" type="MSModel.OperatingSystem+Windows+Server2003+SP2" guid="{1FD3F96E-3760-48C9-BF89-04035C82EADE}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Server2003+SP2" guid="{CCB41B4C-2AA2-4618-A27B-FF60FEFFAD87}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Server2003+SP2" guid="{F02BBF18-B7B9-4496-AA3A-3E6FAE33C253}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+    </OperatingSystem>
+
+    <OperatingSystem symbol="server2003r2" type="MSModel.OperatingSystem+Windows+Server2003R2" guid="{857D3B22-5450-420A-9D98-463FEDFCD8B1}">
+
+      <OperatingSystem symbol="rtm" type="MSModel.OperatingSystem+Windows+Server2003R2+RTM" guid="{C641DBAA-CC6C-415A-BD91-67B5560437DC}">
+
+        <OperatingSystem symbol="32bit" type="MSModel.OperatingSystem+Windows+Server2003R2+RTM" guid="{303EDDEB-421C-43EA-A1B2-2F46977DF7AB}">
+          <AddressBits>32</AddressBits>
+        </OperatingSystem>
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Server2003R2+RTM" guid="{BAA0B189-934C-40ED-8261-B9BA849BEDF6}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+    </OperatingSystem>
+
+    <OperatingSystem symbol="server2008" type="MSModel.OperatingSystem+Windows+Server2008" guid="{C0BE0B62-BA14-4143-B12C-A85FBD1E7F12}">
+
+      <OperatingSystem symbol="rtm" type="MSModel.OperatingSystem+Windows+Server2008+RTM" guid="{17FAE468-F9DB-4310-9A41-2D3BE2B99144}">
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Server2008+RTM" guid="{157E367F-D6BB-4246-99AD-041E062A3B15}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+      <OperatingSystem symbol="sp1" type="MSModel.OperatingSystem+Windows+Server2008+SP1" guid="{D6BAB0A1-45E3-4DFB-B96F-3AE067BA6F7C}">
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Server2008+SP1" guid="{44EED452-2A2C-48EB-9D5E-9493EA45EEBF}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+    </OperatingSystem>
+
+    <OperatingSystem symbol="server2008r2" type="MSModel.OperatingSystem+Windows+Server2008R2" guid="{751B4CF1-8803-497E-8E68-BB6A21D75E66}">
+
+      <OperatingSystem symbol="rtm" type="MSModel.OperatingSystem+Windows+Server2008R2+RTM" guid="{28028652-666D-46EC-895D-0E70E3CA0E9A}">
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Server2008R2+RTM" guid="{B3F10424-64E6-415F-9182-14301E2CEA80}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+      
+      <OperatingSystem symbol="sp1" type="MSModel.OperatingSystem+Windows+Server2008R2+SP1" guid="{16AA9E04-F0D9-49D6-BCAD-A15D9FD65CB3}">
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Server2008R2+SP1" guid="{6663219A-C8D0-40A0-967F-693213E8525A}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+
+    </OperatingSystem>
+
+    <OperatingSystem symbol="server2012" type="MSModel.OperatingSystem+Windows+Server2012" guid="{9FBF888A-C6E1-4E6B-9E2C-31AB27738885}">
+
+      <OperatingSystem symbol="rtm" type="MSModel.OperatingSystem+Windows+Server2012+RTM" guid="{7EA33A58-54B0-4150-AED9-C60C85AB9456}">
+
+        <OperatingSystem symbol="64bit" type="MSModel.OperatingSystem+Windows+Server2012+RTM" guid="{2482C73C-5CDE-4668-88C5-E1CB513D310E}">
+          <AddressBits>64</AddressBits>
+        </OperatingSystem>
+
+      </OperatingSystem>
+    </OperatingSystem>
+
+  </OperatingSystem>
+</OperatingSystems>

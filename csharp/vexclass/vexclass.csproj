@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE939F43-127F-4C8C-8F16-F14DE35EC951}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vexclass</RootNamespace>
+    <AssemblyName>vexclass</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddViolationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddViolationForm.Designer.cs">
+      <DependentUpon>AddViolationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassificationForm.Designer.cs">
+      <DependentUpon>ClassificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExploitabilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExploitabilityForm.Designer.cs">
+      <DependentUpon>ExploitabilityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilePropertyGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProfilePropertyGrid.Designer.cs">
+      <DependentUpon>ProfilePropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileTagControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProfileTagControl.Designer.cs">
+      <DependentUpon>ProfileTagControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TagPanel.cs" />
+    <Compile Include="TransitiveProfileTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransitiveProfileTreeView.Designer.cs">
+      <DependentUpon>TransitiveProfileTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VulnerabilityPropertyGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VulnerabilityPropertyGrid.Designer.cs">
+      <DependentUpon>VulnerabilityPropertyGrid.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddViolationForm.resx">
+      <DependentUpon>AddViolationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassificationForm.resx">
+      <DependentUpon>ClassificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExploitabilityForm.resx">
+      <DependentUpon>ExploitabilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilePropertyGrid.resx">
+      <DependentUpon>ProfilePropertyGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileTagControl.resx">
+      <DependentUpon>ProfileTagControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TransitiveProfileTreeView.resx">
+      <DependentUpon>TransitiveProfileTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VulnerabilityPropertyGrid.resx">
+      <DependentUpon>VulnerabilityPropertyGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\msmodel\msmodel.csproj">
+      <Project>{F7EDC099-F4A7-4DAD-8715-184D5D1AE9BE}</Project>
+      <Name>msmodel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\greencheck.png" />
+    <EmbeddedResource Include="Resources\questionmark.png" />
+    <EmbeddedResource Include="Resources\redx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\blank.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
